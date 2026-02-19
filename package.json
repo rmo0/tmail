@@ -1,5 +1,5 @@
 {
-  "name": "tmail",
+  "name": "@rmo0/tmail",
   "version": "1.0.0",
   "description": "Temporary Gmail (emailnator) client: generate inbox, list messages, get body. No parsing—use your own (e.g. cheerio) to extract codes.",
   "main": "index.js",

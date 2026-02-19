@@ -16,19 +16,19 @@ Client for temporary Gmail via [emailnator](https://www.emailnator.com/). Genera
 ## Install
 
 ```bash
-npm install tmail
+npm install @rmo0/tmail
 ```
 
 With yarn:
 
 ```bash
-yarn add tmail
+yarn add @rmo0/tmail
 ```
 
 ## Usage
 
 ```js
-const createClient = require('tmail');
+const createClient = require('@rmo0/tmail');
 
 const client = createClient({
   proxyUrl: process.env.PROXY_URL || null,
