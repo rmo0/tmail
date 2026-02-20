@@ -1,19 +1,28 @@
 {
   "name": "@rmo0/tmail",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Temporary Gmail (emailnator) client: generate inbox, list messages, get body. No parsing—use your own (e.g. cheerio) to extract codes.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "tsc",
     "test": "npm run build && node -e \"require('./dist'); console.log('tmail load ok');\""
   },
-  "keywords": ["temp-mail", "emailnator", "disposable-email", "gmail"],
+  "keywords": [
+    "temp-mail",
+    "emailnator",
+    "disposable-email",
+    "gmail"
+  ],
   "author": "",
   "license": "MIT",
-  "engines": { "node": ">=18" },
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
     "undici": "^6.0.0"
   },
