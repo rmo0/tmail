@@ -11,7 +11,7 @@ Client for temporary Gmail via [emailnator](https://www.emailnator.com/). Genera
 
 ## Requirements
 
-- Node.js 16+
+- Node.js 18+
 
 ## Install
 
@@ -45,6 +45,8 @@ if (!msg) throw new Error('timeout');
 
 const html = await client.getMessageBody(msg.messageID);
 ```
+
+TypeScript 使用時は `TmailError`, `ClientOptions`, `Message` 等の型をインポートできます。
 
 Options for `createClient`: `proxyUrl`, `tokenCachePath`, `logger` (`{ info, warn, error, debug }`), `timeout`, `maxRetries`, `retryDelay`.  
 Methods: `generateEmail()`, `listMessages()`, `getMessageBody(messageID)`, `waitForMessage({ expectedFrom, timeout, pollInterval, maxAttempts })`, `reset()`, `clearTokenCache()`.  
