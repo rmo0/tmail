@@ -1,6 +1,6 @@
-node_modules/
-token-cache.json
+node_modules
 package-lock.json
+token-cache.json
 *.log
 .env
 .DS_Store
